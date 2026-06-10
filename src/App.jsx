@@ -1,9 +1,26 @@
+import { motion } from "framer-motion";
+
 function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
 
       {/* Hero Section */}
+      <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 8,
+          }}
+          className="absolute w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"
+        />
       <section className="flex flex-col justify-center items-center min-h-screen text-center px-6">
+      <img
+      src="/profile.jpg"
+      alt="Rakesh Rosan"
+      className="w-48 h-48 rounded-full object-cover border-4 border-cyan-400 mb-6"
+      />
         <h1 className="text-6xl font-bold mb-4">
           Rakesh Rosan Paital
         </h1>
@@ -24,9 +41,13 @@ function App() {
             View Projects
           </button>
 
-          <button className="border border-cyan-500 px-6 py-3 rounded-lg">
+          <a
+            href="/Rakesh-Rosan-GenAI-8.5yrs.pdf"
+            download
+            className="border border-cyan-500 px-6 py-3 rounded-lg"
+          >
             Download Resume
-          </button>
+          </a>
         </div>
       </section>
 
@@ -145,35 +166,72 @@ function App() {
       </section>
 
       {/* Skills */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold mb-10">
-          Skills
-        </h2>
+<section className="max-w-5xl mx-auto px-6 py-20">
+  <h2 className="text-4xl font-bold mb-10">
+    Skills
+  </h2>
 
-        <div className="flex flex-wrap gap-4">
-          {[
-            "Generative AI",
-            "Agentic AI",
-            "LangGraph",
-            "LangChain",
-            "Python",
-            "FastAPI",
-            "GCP",
-            "Databricks",
-            "Machine Learning",
-            "NLP",
-            "Docker",
-            "Vector Search"
-          ].map(skill => (
-            <span
-              key={skill}
-              className="bg-slate-800 px-4 py-2 rounded-full"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </section>
+  <div className="flex flex-wrap gap-4">
+    {[
+      "Generative AI",
+      "Agentic AI",
+      "LangGraph",
+      "LangChain",
+      "Python",
+      "FastAPI",
+      "GCP",
+      "Databricks",
+      "Machine Learning",
+      "NLP",
+      "Docker",
+      "Vector Search"
+    ].map((skill) => (
+      <span
+        key={skill}
+        className="bg-slate-800 hover:bg-cyan-500 hover:text-black transition-all duration-300 px-4 py-2 rounded-full"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+</section>
+
+{/* Contact */}
+<section className="max-w-5xl mx-auto px-6 py-20">
+  <h2 className="text-4xl font-bold mb-10">
+    Contact
+  </h2>
+
+  <div className="space-y-4 text-lg">
+    <p>📧 rakeshrosanpaital08@gmail.com</p>
+
+    <p>📱 +91 XXXXX XXXXX</p>
+
+    <p>
+      🔗 LinkedIn:
+      <a
+        href="https://linkedin.com/in/rakeshrosan"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-cyan-400 ml-2 hover:underline"
+      >
+        linkedin.com/in/rakeshrosan
+      </a>
+    </p>
+
+    <p>
+      💻 GitHub:
+      <a
+        href="https://github.com/Rakesh-rosan"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-cyan-400 ml-2 hover:underline"
+      >
+        github.com/Rakesh-rosan
+      </a>
+    </p>
+  </div>
+</section>
 
     </div>
   );
