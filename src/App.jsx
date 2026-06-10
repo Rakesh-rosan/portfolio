@@ -26,10 +26,11 @@
           </p>
 
           <div className="mt-8 flex gap-4">
-            <button className="bg-cyan-500 px-6 py-3 rounded-lg text-black font-semibold">
-              View Projects
-            </button>
-
+          <a href="#projects"
+            className="bg-cyan-500 px-6 py-3 rounded-lg text-black font-semibold">
+            View Projects
+          </a>
+          
             <a
               href="/Rakesh-Rosan-GenAI-8.5yrs.pdf"
               download
@@ -96,7 +97,7 @@
         </section>
 
         {/* Projects */}
-        <section className="max-w-6xl mx-auto px-6 py-20">
+        <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
           <h2 className="text-4xl font-bold mb-10">
             Featured Projects
           </h2>
