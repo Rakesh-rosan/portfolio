@@ -194,7 +194,7 @@
     <div className="space-y-4 text-lg">
       <p>📧 rakeshrosanpaital08@gmail.com</p>
 
-      <p>📱 +91 XXXXX XXXXX</p>
+      <p>📱 +91 9776759291</p>
 
       <p>
         🔗 LinkedIn:
