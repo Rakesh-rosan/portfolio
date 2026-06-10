@@ -1,3 +1,19 @@
+import Overview from "./components/overview"; 
+
+<nav className="sticky top-0 z-50 bg-slate-950 border-b border-slate-800">
+  <div className="max-w-7xl mx-auto px-6 py-4 flex justify-center gap-10">
+
+    <a href="#overview">Overview</a>
+
+    <a href="#projects">Projects</a>
+
+    <a href="#skills">Skills</a>
+
+    <a href="#contact">Contact</a>
+
+  </div>
+</nav>
+
   function App() {
     return (
       <div className="min-h-screen bg-slate-950 text-white">
@@ -30,7 +46,7 @@
             className="bg-cyan-500 px-6 py-3 rounded-lg text-black font-semibold">
             View Projects
           </a>
-          
+
             <a
               href="/Rakesh-Rosan-GenAI-8.5yrs.pdf"
               download
@@ -40,6 +56,16 @@
             </a>
           </div>
         </section>
+
+        <section
+      id="overview"
+      className="max-w-7xl mx-auto px-6 py-20">
+      <h2 className="text-4xl font-bold mb-10">
+        Overview
+      </h2>
+
+      <Overview />
+    </section>
 
         {/* About */}
         <section className="max-w-5xl mx-auto px-6 py-20">
@@ -156,7 +182,7 @@
         </section>
 
         {/* Skills */}
-  <section className="max-w-5xl mx-auto px-6 py-20">
+  <section ids= "skills" className="max-w-5xl mx-auto px-6 py-20">
     <h2 className="text-4xl font-bold mb-10">
       Skills
     </h2>
@@ -187,7 +213,7 @@
   </section>
 
   {/* Contact */}
-  <section className="max-w-5xl mx-auto px-6 py-20">
+  <section id="contact" className="max-w-5xl mx-auto px-6 py-20">
     <h2 className="text-4xl font-bold mb-10">
       Contact
     </h2>
